@@ -6,12 +6,10 @@ struct Node
   int value;
   Node* next;
 
-  Node(int val) : data(val),next(nullptr){}
+  Node(int val, Node* nextNode = nullptr) : value(val), next(nextNode) {}
 };
 
-
 void split(Node*& in, Node*& odds, Node*& evens);
-void add_to_back(Node*& list, Node* node);
 
 
 #endif
