@@ -1,22 +1,17 @@
 #ifndef SPLIT_H
 #define SPLIT_H
 
-
 struct Node 
 {
   int value;
   Node* next;
 
-  /**
-   * Initializing constructor
-   */
-  Node(int v, Node* n)
-  {
-    value = v;
-    next = n;
-  }
+  Node(int val) : data(val),next(nullptr){}
 };
 
+
 void split(Node*& in, Node*& odds, Node*& evens);
+void add_to_back(Node*& list, Node* node);
+
 
 #endif
